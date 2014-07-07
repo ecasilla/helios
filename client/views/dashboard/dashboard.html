@@ -7,7 +7,7 @@
         <section>
           <section class="vbox">
             <header class="header bg-white b-b b-light">
-              <p>Layout start with a hbox</p>
+              {{ > dashboardBar }}
             </header>
             <section class="scrollable wrapper">
               <p class="h4">Contents...</p>
@@ -17,7 +17,9 @@
             </footer>
           </section>
         </section>
-        <aside class="bg-light lter b-l aside-md"> </aside>
+        <aside class="bg-light lter b-l aside-md">
+        {{> friendsList }}
+        </aside>
       </section>
     </section>
   </section>
