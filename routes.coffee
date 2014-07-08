@@ -5,8 +5,12 @@ Router.map ->
   @route 'dashboard',
     path: '/dashboard'
 
-    @route 'transactions',
-      path: '/transactions'
+  @route 'transactions',
+    path: '/transactions',
+    template: 'Transactions'
+
+  @route 'Profile',
+    path: 'users/profile/:id'
 
   @route 'notFound',
     path: '*'
