@@ -9,8 +9,16 @@ Router.map ->
     path: '/transactions',
     template: 'Transactions'
 
+  @route 'accounts',
+    path: '/accounts',
+    template: 'Accounts'
+
   @route 'Profile',
     path: 'users/profile/:id'
+
+  @route 'chat',
+    path: '/chat',
+    template: 'Chat'
 
   @route 'notFound',
     path: '*'
