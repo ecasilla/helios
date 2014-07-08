@@ -14,11 +14,24 @@ Router.map ->
     template: 'Accounts'
 
   @route 'Profile',
-    path: 'users/profile/:id'
+    path: '/profile/:id',
+    template: 'Profile'
 
-  @route 'chat',
-    path: '/chat',
-    template: 'Chat'
+  @route 'Payments',
+    path: '/payments'
+    template: 'Payments'
+
+  @route 'messages',
+    path: '/messages',
+    template: 'Messages'
+
+  @route 'help',
+    path: '/help',
+    template: 'Help'
+
+  @route 'settings',
+    path: '/settings',
+    template: 'Settings'
 
   @route 'notFound',
     path: '*'
