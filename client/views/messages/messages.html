@@ -1,0 +1,41 @@
+<template name="Messages" >
+{{> dashboardNav }}
+
+<section id="content">
+  <section class="hbox stretch">
+<section class="panel panel-default">
+  <header class="panel-heading">Chat</header>
+
+  <section class="chat-list panel-body">
+
+
+  </section>
+
+
+  <footer class="panel-footer footer">
+    <!-- chat form -->
+      <article class="chat-item" id="chat-form">
+        <a class="pull-left thumb-sm avatar">
+          <img src="#" class="img-circle">
+        </a>
+        <section class="chat-body">
+          <form action="" class="m-b-none">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Say something">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">SEND</button>
+              </span>
+            </div>
+          </form>
+        </section>
+      </article>
+    </footer>
+  </section>
+</section>
+</section>
+
+<aside class="bg-light lter b-l aside-lg">
+{{> friendsList }}
+</aside>
+
+</template>
