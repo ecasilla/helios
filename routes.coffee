@@ -13,20 +13,28 @@ Router.map ->
     path: '/accounts',
     template: 'Accounts'
 
-  @route 'Profile',
+  @route 'profile/:id',
     path: '/profile/:id',
     template: 'Profile'
 
-  @route 'Payments',
+  @route 'payments',
     path: '/payments'
     template: 'Payments'
+
+   @route 'premium',
+    path: '/premium'
+    template: 'Premium'
+
+  @route 'atms',
+    path: '/atms'
+    template: 'Atm'
 
   @route 'messages',
     path: '/messages',
     template: 'Messages'
 
   @route 'help',
-    path: '/help',
+    path: 'help',
     template: 'Help'
 
   @route 'settings',
